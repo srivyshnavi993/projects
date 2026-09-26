@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Employee Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Main Heading -->
+    <h1>
+        <i class="fa-solid fa-users"></i>
+        Employee Management System
+    </h1>
+
+
+    <!-- Employee Form -->
+    <div class="form-box">
+
+        <h2 id="formTitle">
+            <i class="fa-solid fa-user-plus"></i>
+            Add Employee
+        </h2>
+
+
+        <form id="employeeForm">
+
+            <input type="hidden" id="id">
+
+
+            <!-- Name -->
+            <label>
+                <i class="fa-solid fa-user"></i>
+                Name
+            </label>
+
+            <input type="text"
+                   id="name"
+                   placeholder="Enter employee name">
+
+
+            <!-- Email -->
+            <label>
+                <i class="fa-solid fa-envelope"></i>
+                Email
+            </label>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Enter employee email">
+
+
+            <!-- Department -->
+            <label>
+                <i class="fa-solid fa-building"></i>
+                Department
+            </label>
+
+            <input type="text"
+                   id="department"
+                   placeholder="Enter department">
+
+
+            <!-- Salary -->
+            <label>
+                <i class="fa-solid fa-money-bill-wave"></i>
+                Salary
+            </label>
+
+            <input type="number"
+                   id="salary"
+                   placeholder="Enter salary">
+
+
+            <!-- Add / Update Button -->
+            <button type="submit" id="submitButton">
+
+                <i class="fa-solid fa-user-plus"></i>
+                Add Employee
+
+            </button>
+
+
+            <!-- Cancel Button -->
+            <button type="button"
+                    id="cancelButton"
+                    onclick="cancelEdit()"
+                    class="secondary">
+
+                <i class="fa-solid fa-xmark"></i>
+                Cancel
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Search Section -->
+    <div class="search-box">
+
+        <input type="text"
+               id="search"
+               placeholder="Search by name, email or department">
+
+
+        <!-- Search Button -->
+        <button onclick="searchEmployee()">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+
+        </button>
+
+
+       
+<button type="button" onclick="logout()" class="logout-button">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Logout
+</button>
+
+
+
+    </div>
+
+
+    <!-- Employee Table -->
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    <i class="fa-solid fa-hashtag"></i>
+                    ID
+                </th>
+
+                <th>
+                    <i class="fa-solid fa-user"></i>
+                    Name
+                </th>
+
+                <th>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </th>
+
+                <th>
+                    <i class="fa-solid fa-building"></i>
+                    Department
+                </th>
+
+                <th>
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Salary
+                </th>
+
+                <th>
+                    <i class="fa-solid fa-gears"></i>
+                    Actions
+                </th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody id="employeeTable">
+
+            <!-- Employee records will be loaded here by JavaScript -->
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
+

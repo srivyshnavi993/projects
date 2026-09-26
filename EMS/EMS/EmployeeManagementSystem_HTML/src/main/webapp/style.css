@@ -1,0 +1,329 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f0fdfa);
+    color: #263238;
+}
+
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    color: #3949ab;
+    margin-bottom: 30px;
+}
+
+h1 i {
+    color: #5e35b1;
+    margin-right: 10px;
+}
+
+
+/* Form Box */
+.form-box {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9ff;
+    border-radius: 12px;
+    border-left: 5px solid #3949ab;
+}
+
+
+/* Form Heading */
+.form-box h2 {
+    color: #3949ab;
+    margin-top: 0;
+}
+
+.form-box h2 i {
+    color: #8e24aa;
+    margin-right: 8px;
+}
+
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #37474f;
+}
+
+label i {
+    margin-right: 7px;
+    color: #5e35b1;
+}
+
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c5cae9;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #3949ab;
+    box-shadow: 0 0 5px rgba(57, 73, 171, 0.25);
+}
+
+
+/* Buttons */
+button {
+    padding: 10px 16px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    background: #3949ab;
+    color: white;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #283593;
+    transform: translateY(-1px);
+}
+
+button i {
+    margin-right: 6px;
+}
+
+
+/* Secondary Button */
+.secondary {
+    background: #78909c;
+}
+
+.secondary:hover {
+    background: #546e7a;
+}
+
+
+/* Search Box */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f3f6ff;
+    border-radius: 10px;
+}
+
+.search-box input {
+    flex: 1;
+}
+
+.search-box button {
+    margin-top: 0;
+}
+
+
+/* Search Icon */
+.search-box button:first-of-type {
+    background: #00897b;
+}
+
+.search-box button:first-of-type:hover {
+    background: #00695c;
+}
+
+
+/* Reset Button */
+.search-box .secondary {
+    background: #fb8c00;
+}
+
+.search-box .secondary:hover {
+    background: #ef6c00;
+}
+
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+/* Table Header */
+th {
+    background: linear-gradient(135deg, #3949ab, #5e35b1);
+    color: white;
+    padding: 12px;
+}
+
+th i {
+    margin-right: 6px;
+    color: #ffeb3b;
+}
+
+
+/* Table Cells */
+th,
+td {
+    border: 1px solid #e0e0e0;
+    padding: 11px;
+    text-align: center;
+}
+
+td {
+    background: white;
+}
+
+
+/* Alternate Rows */
+tbody tr:nth-child(even) td {
+    background: #f8f9ff;
+}
+
+
+/* Row Hover */
+tbody tr:hover td {
+    background: #e8eaf6;
+}
+
+
+/* Action Buttons */
+.action-button {
+    margin: 2px;
+    padding: 7px 10px;
+    border-radius: 6px;
+}
+
+
+/* Edit Button */
+.edit-button {
+    background: #1e88e5;
+}
+
+.edit-button:hover {
+    background: #1565c0;
+}
+
+
+/* Delete Button */
+.delete-button {
+    background: #e53935;
+}
+
+.delete-button:hover {
+    background: #c62828;
+}
+
+
+/* Edit Icon */
+.edit-button i {
+    color: #fff;
+}
+
+
+/* Delete Icon */
+.delete-button i {
+    color: #fff;
+}
+
+
+/* Cancel Button */
+#cancelButton {
+    display: none;
+    background: #e53935;
+}
+
+#cancelButton:hover {
+    background: #c62828;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+}
+
+
+/* Logout Button */
+
+.logout-button {
+    background: #e53935;
+}
+
+.logout-button:hover {
+    background: #c62828;
+}
+
+
+/* Logout Message */
+
+.logout-message {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.logout-message i {
+    font-size: 70px;
+    color: #43a047;
+    margin-bottom: 20px;
+}
+
+.logout-message h1 {
+    color: #3949ab;
+    margin-bottom: 10px;
+}
+
+.logout-message h2 {
+    color: #37474f;
+    font-weight: normal;
+}
+
+.logout-message p {
+    color: #78909c;
+    font-size: 16px;
+}
+
